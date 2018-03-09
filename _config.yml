@@ -20,13 +20,14 @@ title: Starter Jekyller Site
 email: youremail@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-realBaseUrl: "" # the subpath of yoru site.  Should be same as baseurl.  Need this for discrepencies with github pages versus local jekyll server
+realBaseUrl: "/" # the subpath of yoru site.  Should be same as baseurl.  Need this for discrepencies with github pages versus local jekyll server
 
 # Jekyller API urls from Jekyller serverless aws lambdas.  You must deploy
 # Jekyller services on amazon aws. 
 # https://github.com/kusog/jekyller-services
 createPostUrl: https://[your amazon lambda api].amazonaws.com/dev/createPost
 updateContentUrl: https://[your amazon lambda api].amazonaws.com/dev/updateContent
+loginUrl: https://[your amazon lambda api].amazonaws.com/dev/login
 
 # Build settings
 markdown: kramdown
